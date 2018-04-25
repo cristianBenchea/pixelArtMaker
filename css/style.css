@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background: url('https://i.pinimg.com/736x/66/a0/89/66a0891d6591ed1ecb80d79a614489ef--psd-freebies.jpg');
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+h1 {
+  font-family: Monoton, sans-serif;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+h2, form {
+  font-family: 'Roboto', sans-serif;
+}
+label {
+  margin: 5px;
+}
+table,
+tr,
+td {
+  border: 1px solid white;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+.hover:hover {
+  background-color:lightgrey;
+}
+
+input[type=number] {
+  width: 6em;
+  text-align: center;
+  padding: .5em;
+}
+input[type=color], .items button{
+  background-color: inherit;
+  padding: 0;
+  border: none;
+
+}
+input[type=submit] {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: .6em;
+}
+input[type=submit]:hover{
+  background-color: darkgreen;
+}
+.items img {
+  width: 3em;
+  height: 3em;
+}
+.items {
+  display: none;
+}
+.addDeleteItems div button, #tableToImage, #previewImage{
+  border:1px solid whitesmoke;
+  background-color: #331d64;
+  color:white;
+  padding: .5em;
+  box-shadow: 0 0 8px #ff252d;
+  margin: .5em;
+}
+.paintingItems button img {
+  padding: .5em;
+}
+.addDeleteItems div button:hover{
+  background-color: #391e9b;
+
+}
+.addDeleteItems {
+  margin-bottom: 1em;
+}
+#tableToImage {
+  text-decoration: none;
+  margin-top: 3em;
+}
+
+@media(max-width: 476px) {
+  #sizePicker input {
+    display:block;
+    margin: 1em auto;
+  }
+}
