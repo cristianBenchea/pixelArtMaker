@@ -8,16 +8,14 @@ body {
 h1 {
   font-family: Monoton, sans-serif;
   font-size: 70px;
-  margin: 0.2em;
+  margin: 1rem;
 }
 
 h2 {
-  margin: 1em 0 0.25em;
+  margin: 1rem 0 0.25rem;
 }
 
-h2:first-of-type {
-  margin-top: 0.5em;
-}
+
 h2, form {
   font-family: 'Roboto', sans-serif;
 }
@@ -48,9 +46,9 @@ td {
 }
 
 input[type=number] {
-  width: 6em;
+  width: 5rem;
   text-align: center;
-  padding: .5em;
+  padding: .5rem;
 }
 
 input[type=color], .items button{
@@ -59,12 +57,15 @@ input[type=color], .items button{
   border: none;
 
 }
-
+input[type=color] {
+  width: 3rem;
+  height: 3rem;
+}
 input[type=submit] {
   background-color: green;
   color: white;
   border: none;
-  padding: .6em;
+  padding: .6rem;
 }
 
 input[type=submit]:hover{
@@ -72,8 +73,8 @@ input[type=submit]:hover{
 }
 
 .items img {
-  width: 3em;
-  height: 3em;
+  width: 3rem;
+  height: 3rem;
 }
 
 .items {
@@ -84,14 +85,14 @@ input[type=submit]:hover{
   border:1px solid whitesmoke;
   background-color: #331d64;
   color:white;
-  padding: .5em;
+  padding: .5rem;
   -webkit-box-shadow: 0 0 8px #ff252d;
   box-shadow: 0 0 8px #ff252d;
-  margin: .5em;
+  margin: .5rem;
 }
 
 .paintingItems button img {
-  padding: .5em;
+  padding: .5rem;
 }
 
 .addDeleteItems div button:hover{
@@ -99,18 +100,16 @@ input[type=submit]:hover{
 
 }
 
-.addDeleteItems {
-  margin-bottom: 1em;
-}
-
 #tableToImage {
   text-decoration: none;
-  margin-top: 3em;
 }
 
 @media(max-width: 476px) {
   #sizePicker input {
     display:block;
-    margin: 1em auto;
+    margin: 1rem auto;
+  }
+  h1 {
+    font-size: 2rem;
   }
 }
