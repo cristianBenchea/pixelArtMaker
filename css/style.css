@@ -1,18 +1,28 @@
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
 body {
   text-align: center;
   background: url('https://i.pinimg.com/736x/66/a0/89/66a0891d6591ed1ecb80d79a614489ef--psd-freebies.jpg');
   color: white;
   text-shadow: 0 0 8px black;
 }
-
 h1 {
   font-family: Monoton, sans-serif;
-  font-size: 70px;
+  font-size: 7rem;
   margin: 0.2em;
 }
-
+label {
+  font-size:2rem;
+}
 h2 {
   margin: 1em 0 0.25em;
+  font-size: 3rem;
 }
 
 h2:first-of-type {
@@ -22,7 +32,7 @@ h2, form {
   font-family: 'Roboto', sans-serif;
 }
 label {
-  margin: 5px;
+  margin: 0.5rem;
 }
 table,
 tr,
@@ -56,7 +66,10 @@ input[type=color], .items button{
   background-color: inherit;
   padding: 0;
   border: none;
-
+}
+input[type=color] {
+  width: 5rem;
+  height: 5rem;
 }
 input[type=submit] {
   background-color: green;
@@ -68,8 +81,8 @@ input[type=submit]:hover{
   background-color: darkgreen;
 }
 .items img {
-  width: 3em;
-  height: 3em;
+  width: 6rem;
+  height: 6rem;
 }
 .items {
   display: none;
@@ -78,28 +91,31 @@ input[type=submit]:hover{
   border:1px solid whitesmoke;
   background-color: #331d64;
   color:white;
-  padding: .5em;
+  padding:1rem;
   box-shadow: 0 0 8px #ff252d;
-  margin: .5em;
+  margin: 1rem;
 }
 .paintingItems button img {
-  padding: .5em;
+  padding: .5rem;
 }
 .addDeleteItems div button:hover{
   background-color: #391e9b;
 
 }
 .addDeleteItems {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 #tableToImage {
   text-decoration: none;
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 @media(max-width: 476px) {
   #sizePicker input {
-    display:block;
+    display: block;
     margin: 1em auto;
+  }
+  h1 {
+    font-size: 3rem;
   }
 }

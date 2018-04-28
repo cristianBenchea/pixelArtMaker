@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <title>Pixel Art Maker</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -11,51 +12,46 @@
 
 <body>
 
-<h1>Lab: Pixel Art Maker</h1>
+  <h1>Lab: Pixel Art Maker</h1>
 
-<h2>Choose Grid Size</h2>
-<form id="sizePicker">
-  <label for="input_height">Grid Height:</label><input type="number" id="input_height" name="height" min="1" max="80" value="10">
-  <label for="input_width">Grid Width:</label><input type="number" id="input_width" name="width" min="1" max="80" value="10">
-  <input type="submit">
-</form>
+  <h2>Choose Grid Size</h2>
+  <form id="sizePicker">
+    <label for="input_height">Grid Height:</label><input type="number" id="input_height" name="height" min="1" max="80" value="10">
+    <label for="input_width">Grid Width:</label><input type="number" id="input_width" name="width" min="1" max="80" value="10">
+    <input type="submit">
+  </form>
 
-<h2><label for="colorPicker">Pick A Color</label></h2>
-<input type="color" id="colorPicker"><br>
+  <h2><label for="colorPicker">Pick A Color</label></h2>
+  <input type="color" id="colorPicker"><br>
 
-<h2>Design Canvas</h2>
-<div class="items">
-  <div class="paintingItems">
-    <button id="erase"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-6bf5d8f5e1dbfef72c29e04e5338c374-Clean.png"></button>
-    <button id="brush"><img src="https://png.icons8.com/color/540/paint-brush.png"></button>
-  </div>
-  <div class="addDeleteItems">
-    <div class="rowButtons">
-      <button id="addRow">Add Row</button>
-      <button id="deleteRow">Delete Last Row</button>
+  <h2>Design Canvas</h2>
+  <div class="items">
+    <div class="paintingItems">
+      <button id="erase"><img src="http://www.myiconfinder.com/uploads/iconsets/256-256-6bf5d8f5e1dbfef72c29e04e5338c374-Clean.png"></button>
+      <button id="brush"><img src="https://png.icons8.com/color/540/paint-brush.png"></button>
     </div>
-    <div class="columnButtons">
-      <button id="addColumn">Add Column</button>
-      <button id="deleteColumn">Delete Last Column</button>
+    <div class="addDeleteItems">
+      <div class="rowButtons">
+        <button id="addRow">Add Row</button>
+        <button id="deleteRow">Delete Last Row</button>
+      </div>
+      <div class="columnButtons">
+        <button id="addColumn">Add Column</button>
+        <button id="deleteColumn">Delete Last Column</button>
+      </div>
     </div>
   </div>
-</div>
-<table id="pixel_canvas"></table>
+  <table id="pixel_canvas"></table>
 
-<button id="previewImage" class="items">Preview as Image</button>
-<a id="tableToImage" class="items" href="#">Download as Image</a>
+  <button id="previewImage" class="items">Preview as Image</button>
+  <a id="tableToImage" class="items" href="#">Download as Image</a>
 
 
-</div>
+
+
 <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js'></script>
-
-
-
 <script  src="js/index.js"></script>
-
-
-
 
 </body>
 
