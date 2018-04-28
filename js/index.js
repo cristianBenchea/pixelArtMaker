@@ -23,7 +23,6 @@ $(document).ready(function () {
         gridHeight = $("#input_height").val();
         gridWidth = $("#input_width").val();
 
-
         for (let i = 0; i < gridHeight; i++) {
             let thisRow = $("<tr></tr>");
             for (let j = 0; j < gridWidth; j++)
@@ -39,8 +38,7 @@ $(document).ready(function () {
 
         draw();
     });
-
-
+    
     let currentColor = $(colorPicker).val();
 
     $(colorPicker).on("change", function () {

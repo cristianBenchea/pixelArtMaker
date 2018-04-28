@@ -52,28 +52,34 @@ input[type=number] {
   text-align: center;
   padding: .5em;
 }
+
 input[type=color], .items button{
   background-color: inherit;
   padding: 0;
   border: none;
 
 }
+
 input[type=submit] {
   background-color: green;
   color: white;
   border: none;
   padding: .6em;
 }
+
 input[type=submit]:hover{
   background-color: darkgreen;
 }
+
 .items img {
   width: 3em;
   height: 3em;
 }
+
 .items {
   display: none;
 }
+
 .addDeleteItems div button, #tableToImage, #previewImage{
   border:1px solid whitesmoke;
   background-color: #331d64;
@@ -82,16 +88,20 @@ input[type=submit]:hover{
   box-shadow: 0 0 8px #ff252d;
   margin: .5em;
 }
+
 .paintingItems button img {
   padding: .5em;
 }
+
 .addDeleteItems div button:hover{
   background-color: #391e9b;
 
 }
+
 .addDeleteItems {
   margin-bottom: 1em;
 }
+
 #tableToImage {
   text-decoration: none;
   margin-top: 3em;
