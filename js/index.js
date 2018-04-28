@@ -38,7 +38,7 @@ $(document).ready(function () {
 
         draw();
     });
-    
+
     let currentColor = $(colorPicker).val();
 
     $(colorPicker).on("change", function () {
